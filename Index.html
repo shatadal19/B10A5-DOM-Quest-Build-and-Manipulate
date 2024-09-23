@@ -12,20 +12,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="w-9/12 h-auto m-auto mt-6">
-    <header>
+    <header class="sticky">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-          
-            <a class="btn btn-ghost text-xl">Blog</a>
+            <a href="blog.html" class="btn btn-ghost text-xl">Blog</a>
           </div>
           <div class="navbar-center flex gap-2">
-            <img src="assets/logo.png" alt="">
+            <img src="assets/logo.png" alt="" />
             <h3 class="text-2xl">Donate Bangladesh</h3>
-              
           </div>
           <div class="navbar-end flex gap-2">
-            <img src="assets/coin.png" alt="">
+            <img src="assets/coin.png" alt="" />
             <h3 id="m-blance">5500 BDT</h3>
           </div>
         </div>
@@ -33,28 +31,70 @@
     </header>
     <section class="ml-72 mt-32 pl-80">
       <button id="donate-btn" class="btn" href="">Donation</button>
-    <button id="history-btn" class="btn ml-4" href="">History</button>
+      <button id="history-btn" class="btn ml-4" href="">History</button>
     </section>
     <main>
-      <section id="donet-sec" class="">
-        
+      <div id="donet-sec" class=" ">
         <!-- Donate for Flood at Noakhali, Bangladesh -->
         <section class="flex items-center mt-6">
           <div class="card card-side bg-base-100 shadow-xl">
             <div class="">
-              <img width="1500px" class="p-3" src="assets/noakhali.png" alt="">
+              <img
+                width="1500px"
+                class="p-3"
+                src="assets/noakhali.png"
+                alt=""
+              />
             </div>
-            <div class=" px-16 pt-2">
-              <div class="flex gap-2 ">
-                <img src="assets/coin.png" alt="">
-              <p id="t-n" class="text-xl font-bold">0</p>
-              <p class="text-xl font-bold">BDT</p>
+            <div class="px-16 pt-2">
+              <div class="flex gap-2">
+                <img src="assets/coin.png" alt="" />
+                <p id="t-n" class="text-xl font-bold">0</p>
+                <p class="text-xl font-bold">BDT</p>
               </div>
-              <h3 class="text-3xl font-extrabold mt-2 ">Donate for Flood at Noakhali, Bangladesh</h3>
-              <p class="text-sm font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-              <input id="d-n" class="mt-2 w-11/12 h-12 rounded-lg" type="text">
-              <br>
-              <button id="sub1-btn" class=" btn mt-2 w-11/12 h-12 rounded-lg shadow-2xl bg-lime-600">Donate Now</button>
+              <h3 class="text-3xl font-extrabold mt-2">
+                Donate for Flood at Noakhali, Bangladesh
+              </h3>
+              <p class="text-sm font-light">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <input
+                id="d-n"
+                class="mt-2 w-11/12 h-12 rounded-lg"
+                type="text"
+              />
+              <br />
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                id="sub1-btn"
+                class="btn mt-2 w-11/12 h-12 rounded-lg shadow-2xl bg-lime-600"
+                onclick="my_modal_5.showModal()"
+              >
+                Donate
+              </button>
+              <dialog
+                id="my_modal_5"
+                class="modal modal-bottom sm:modal-middle"
+              >
+                <div class="modal-box">
+                  <h3 class="text-3xl font-extrabold">Congratulation</h3>
+                  <p class="py-4">
+                    You Have Donated for Humankind
+                  </p>
+                  <h3 class="text-2xl font-bold">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close Conformation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </section>
@@ -62,19 +102,37 @@
         <section class="flex items-center mt-6">
           <div class="card card-side bg-base-100 shadow-xl">
             <div class="">
-              <img width="1500px" class="p-3" src="assets/feni.png" alt="">
+              <img width="1500px" class="p-3" src="assets/feni.png" alt="" />
             </div>
-            <div class=" px-16 pt-2">
-              <div class="flex gap-2 ">
-                <img src="assets/coin.png" alt="">
+            <div class="px-16 pt-2">
+              <div class="flex gap-2">
+                <img src="assets/coin.png" alt="" />
                 <p id="t-f" class="text-xl font-bold">0</p>
                 <p class="text-xl font-bold">BDT</p>
               </div>
-              <h3 class="text-3xl font-extrabold mt-2 ">Donate for Flood Relief in Feni,Bangladesh</h3>
-              <p class="text-sm font-light"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster.</p>
-              <input id="d-f" class="mt-2 w-11/12 h-12 rounded-lg" type="text">
-              <br>
-              <button id="sub2-btn" class="mt-2 w-11/12 h-12 rounded-lg shadow-2xl bg-lime-600">Donate Now</button>
+              <h3 class="text-3xl font-extrabold mt-2">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h3>
+              <p class="text-sm font-light">
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster.
+              </p>
+              <input
+                id="d-f"
+                class="mt-2 w-11/12 h-12 rounded-lg"
+                type="text"
+              />
+              <br />
+              <button
+                id="sub2-btn"
+                class="mt-2 w-11/12 h-12 rounded-lg shadow-2xl bg-lime-600"
+              >
+                Donate Now
+              </button>
             </div>
           </div>
         </section>
@@ -82,32 +140,48 @@
         <section class="flex items-center mt-6">
           <div class="card card-side bg-base-100 shadow-xl">
             <div class="">
-              <img width="1500px" class="p-3" src="assets/quota-protest.png" alt="">
+              <img
+                width="1500px"
+                class="p-3"
+                src="assets/quota-protest.png"
+                alt=""
+              />
             </div>
-            <div class=" px-16 pt-2">
-              <div class="flex gap-2 ">
-                <img src="assets/coin.png" alt="">
+            <div class="px-16 pt-2">
+              <div class="flex gap-2">
+                <img src="assets/coin.png" alt="" />
                 <p id="t-Q" class="text-xl font-bold">0</p>
                 <p class="text-xl font-bold">BDT</p>
               </div>
-              <h3 class="text-3xl font-extrabold mt-2 ">Donate for Flood at Noakhali, Bangladesh</h3>
-              <p class="text-sm font-light"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during</p>
-              <input id="d-Q" class="mt-2 w-11/12 h-12 rounded-lg" type="text">
-              <br>
-              <button id="sub3-btn" class="mt-2 w-11/12 h-12 rounded-lg shadow-2xl bg-lime-600">Donate Now</button>
+              <h3 class="text-3xl font-extrabold mt-2">
+                Donate for Flood at Noakhali, Bangladesh
+              </h3>
+              <p class="text-sm font-light">
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during
+              </p>
+              <input
+                id="d-Q"
+                class="mt-2 w-11/12 h-12 rounded-lg"
+                type="text"
+              />
+              <br />
+              <button
+                id="sub3-btn"
+                class="mt-2 w-11/12 h-12 rounded-lg shadow-2xl bg-lime-600"
+              >
+                Donate Now
+              </button>
             </div>
           </div>
-        </section> 
-      </section>
-      <section id="history-sec " class="">
-        <div>
-          <h3>
-            hi
-          </h3>
-          <p>
-
-          </p>
-        </div>
+        </section>
+      </div>
+      <section id="history-sec" class="hidden">
+        <div id="insertion"></div>
       </section>
     </main>
     <footer></footer>

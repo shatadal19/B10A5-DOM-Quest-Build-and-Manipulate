@@ -16,6 +16,24 @@ document.getElementById('sub1-btn').addEventListener('click', function(event){
         const Mblance = getInputFieldByValuedIdInnertext('m-blance');
         const nMBlance = Mblance - donteN;
         document.getElementById('m-blance').innerText =nMBlance;
+
+        const div =document.createElement('div');
+        div.classList.add('bg-yellow-300');
+        div.classList.add('card');
+        div.classList.add('card-side');
+        div.classList.add('rounded-lg');
+        div.classList.add('shadow-3xl');
+        div.innerHTML = `
+        
+        <h2 class=" text-3xl font-bold text-black"> ${donteN}BDT Donate for Flood at Noakhali, Bangladesh</h2>
+        `;
+        document.getElementById('insertion').appendChild(div);
+        // const div = document.createElement('div');
+        // div.classList.add('card card-side bg-base-300 shadow-3xl');
+        // div.innerHTML = `
+        // <h2 class="${donteN} text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+        // `;
+        // document.getElementById('insertion').appendChild(div);
     }
    
 })

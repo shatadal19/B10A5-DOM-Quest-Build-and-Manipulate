@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" w-9/12 h-auto m-auto mt-6">
+    <header class="sticky">
+        <nav>
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              
+              <a href="index.html" class="btn btn-ghost text-xl">Home</a>
+            </div>
+            <div class="navbar-center flex gap-2">
+              <img src="assets/logo.png" alt="">
+              <h3 class="text-2xl">Donate Bangladesh</h3>
+                
+            </div>
+            <div class="navbar-end flex gap-2">
+              <img src="assets/coin.png" alt="">
+              <h3 id="m-blance">5500 BDT</h3>
+            </div>
+          </div>
+        </nav>
+      </header>
+   <main class="mt-6">
+    <h1 class="text-3xl font-extrabold">Important FAQ</h1>
+    <div class="collapse collapse-arrow bg-base-200 mt-5">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is The Document Object Model?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM)
+            The Document Object Model (DOM) is a programming interface that represents an HTML or XML document as a tree structure. Each node of this tree is an object representing a part of the document. This structure makes it easy for programming languages to interact with and manipulate the content, structure, and style of a web page.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How Do you select an element From Dom?</div>
+        <div class="collapse-content">
+          <div>
+            <h3>Here is it</h3>
+            <ul>
+                <li>If you know the unique ID of an element, use getElementById.</li>
+                <li>If you know the class name of an element, use getElementsByClassName.</li>
+                <li>If you know the tag name of an element, use getElementsByTagName.</li>
+                <li>For more complex selectors, use querySelector or querySelectorAll.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is even delegation in the context of the DOM, and Why is it useful?</div>
+        <div class="collapse-content">
+          <p>In the DOM, even delegation is a technique that involves attaching an event listener to a parent element rather than to each individual child element. This allows you to efficiently handle events for multiple child elements without the need to explicitly assign event listeners to each one.</p>
+          
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an elements attribute and styling the DOM</div>
+        <div class="collapse-content">
+          <p>Use document.getElementById('elementId') to get a reference to the element by its ID.
+            Use document.querySelector('selector') to get a reference to the first element that matches the specified CSS selector.
+            Use document.querySelectorAll('selector') to get a collection of all elements that match the specified CSS selector.</p>
+      </div>
+   </main>
+        
+          <script src="scripts/donate.js"></script>
+    <script src="scripts/histry.js"></script>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/fiture.js"></script>
+</body>
+</html>
