@@ -10,3 +10,5 @@ function getInputFieldByValuedIdInnertext(id){
     const inputNumber = parseFloat(input);
     return inputNumber;
 }
+
+var today = new Date();
