@@ -1,8 +1,8 @@
-var today = new Date();
-var time = today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+const today = new Date();
+const time = today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
 
 document.getElementById('sub1-btn').addEventListener('click', function(event){
-    event.preventDefault();
+    // event.preventDefault();
     const donteN = getInputFieldByValuedId('d-n');
     const Mblance = getInputFieldByValuedIdInnertext('m-blance');
 
@@ -22,11 +22,11 @@ document.getElementById('sub1-btn').addEventListener('click', function(event){
         document.getElementById('m-blance').innerText =nMBlance;
 
         const div =document.createElement('div');
-        div.classList.add('bg-yellow-300');
+        div.classList.add('bg-yellow-100');
         div.classList.add('card');
         div.classList.add('card-side');
         div.classList.add('rounded-lg');
-        // div.classList.add('shadow-3xl');
+        div.classList.add('mt-6');
         div.innerHTML = `
         
         <h2 class=" text-3xl font-bold text-black"> ${donteN}BDT Donate for Flood at Noakhali, Bangladesh <p>And the time is ${time}</p></h2>
@@ -64,11 +64,11 @@ document.getElementById('sub2-btn').addEventListener('click', function(event){
         const nMBlance = Mblance - donteF;
         document.getElementById('m-blance').innerText =nMBlance;
         const div =document.createElement('div');
-        div.classList.add('bg-yellow-300');
+        div.classList.add('bg-yellow-100');
         div.classList.add('card');
         div.classList.add('card-side');
         div.classList.add('rounded-lg');
-        // div.classList.add('shadow-3xl');
+        div.classList.add('mt-6');
         div.innerHTML = `
         
         <h2 class=" text-3xl font-bold text-black"> ${donteF} BDT Donate for Flood Relief in Feni,Bangladesh <p>And the time is ${time}</p></h2>
@@ -100,11 +100,11 @@ document.getElementById('sub3-btn').addEventListener('click', function(event){
         const nMBlance = Mblance - donteQ;
         document.getElementById('m-blance').innerText =nMBlance;
         const div =document.createElement('div');
-        div.classList.add('bg-yellow-300');
+        div.classList.add('bg-yellow-100');
         div.classList.add('card');
         div.classList.add('card-side');
         div.classList.add('rounded-lg');
-        // div.classList.add('shadow-3xl');
+        div.classList.add('mt-6');
         div.innerHTML = `
         
         <h2 class=" text-3xl font-bold text-black"> ${donteQ}BDT Donate for Aid for Injured in the Quota Movement <p>And the time is ${time}</p></h2>
